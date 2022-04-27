@@ -1,0 +1,19 @@
+@import "_commons";
+@import "_fonts";
+@import "_navBar";
+@import "_content";
+
+*{
+	font-family: $fontMain;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%; /* 10 px = 1 rem */ 
+}
+
+body{
+	background-color: $bodyColor;
+}
+

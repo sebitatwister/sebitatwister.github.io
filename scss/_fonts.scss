@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@mixin texto ($text-align, $font-size, $color-font){
+
+	text-align: $text-align;
+	font-size: $font-size;
+	color: $color-font
+}
+
+
+.nota__encabezado{
+	@include texto(center, 1.7rem, $dorado);
+
+	text-decoration-style: solid;
+	font-weight: 100;
+	font-family: 'Julius Sans One', sans-serif;
+
+}
+
+.novedades__articulo{
+	width: 90% ;
+	height: auto;
+	margin: 20px auto;
+	border-bottom: solid 4px $dorado;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}	
+
+.texto1{
+	@include texto(center, 3rem, white);
+	font-family: $fontCursiva;
+
+}
+.texto2{
+	@include texto(center, 2rem, $dorado);
+
+}
+
+
+.letra__negrita{
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.novedades__titulo--xxl{
+	font-size: 5rem;
+}
+.novedades__titulo--xl{
+	font-size: 3.5rem;
+}
+
+.titulo__pie{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2.5rem;
+	color: $dorado;
+	font-family: 'Julius Sans One', sans-serif;
+
+}
+
